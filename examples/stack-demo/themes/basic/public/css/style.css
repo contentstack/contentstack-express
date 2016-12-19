@@ -1,0 +1,5 @@
+html{background-color:#e6e9e9}
+body{margin:0 auto;padding:2em 2em 4em;max-width:800px;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5em;color:#545454;background-color:#fff;box-shadow:0 0 2px rgba(0,0,0,.06)}
+a{color:#0083e8}
+b,strong{font-weight:600}
+img{background:0 0;border:10px solid rgba(0,0,0,.12);border-radius:4px;display:block;margin:1.3em auto;max-width:95%}
