@@ -1,6 +1,7 @@
 [![Built.io Contentstack](https://contentstackdocs.built.io/static/images/logo.png)](http://contentstack.io)
 
 # Built.io Contentstack web application framework based on Express
+A node.js web application framework based on Express.js for Built.io Contentstack
 
 ## Install CLI
 Run the following command in a Terminal or Command Prompt to globally install the latest version of Built.io Contentstack CLI on your system:
@@ -45,3 +46,4 @@ $ npm start
 
 ### License
 Copyright © 2012-2016 [Built.io](https://www.built.io/). All Rights Reserved.
+=======
