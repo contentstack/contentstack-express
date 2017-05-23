@@ -1,67 +1,26 @@
 {
-  "name": "contentstack-express",
-  "version": "1.0.4",
-  "description": "Built.io Contentstack web application framework based on Express.",
-  "homepage": "https://www.built.io/products/contentstack/overview",
-  "author": {
-    "name": "Built.io Contentstack",
-    "url": "https://www.built.io/"
-  },
+  "name": "contentstack-nodejs-framework",
+  "version": "3.0.0",
+  "description": "",
+  "main": "index.js",
   "dependencies": {
-    "async": "1.5.2",
-    "consolidate": "0.14.0",
-    "express": "4.13.4",
-    "graceful-fs": "4.1.4",
-    "htmlclean": "2.7.7",
-    "lodash": "3.10.1",
-    "methods": "1.1.2",
-    "mkdirp": "0.5.1",
-    "nedb": "1.8.0",
-    "nunjucks": "2.3.0",
-    "on-headers": "1.0.1",
-    "pagedown": "1.1.0",
-    "path-to-regexp": "1.2.1",
-    "request": "2.69.0",
-    "serve-favicon": "2.3.0",
-    "sift": "3.2.1",
-    "socket.io-client": "1.4.5",
-    "when": "3.7.7",
-    "winston": "2.2.0"
+    "contentstack-express": "^3.0.0"
   },
-  "engines": {
-    "node": ">=0.10.0"
+  "devDependencies": {
+    "lodash": "^4.11.0",
+    "mkdirp": "^0.5.1",
+    "request-promise": "^3.0.0",
+    "tap-json": "^0.1.1",
+    "tape": "^4.5.1",
+    "when": "^3.7.7"
   },
-  "license": "MIT",
-  "main": "contentstack.js",
-  "_id": "contentstack-express@1.0.4",
-  "scripts": {},
-  "_shasum": "74c1fcf6a5261c1ba98f47bcaa5b53183383a570",
-  "_from": "contentstack-express@>=1.0.0 <2.0.0",
-  "_npmVersion": "2.15.0",
-  "_nodeVersion": "4.4.2",
-  "_npmUser": {
-    "name": "hiteshbal",
-    "email": "hitesh.baldaniya@raweng.com"
+  "scripts": {
+    "test": "node test"
   },
-  "dist": {
-    "shasum": "74c1fcf6a5261c1ba98f47bcaa5b53183383a570",
-    "tarball": "https://registry.npmjs.org/contentstack-express/-/contentstack-express-1.0.4.tgz"
+  "repository": {
+    "type": "git",
+    "url": "git@raw-engineering-inc.git.beanstalkapp.com:/raw-engineering-inc/contentstack-nodejs-framework.git"
   },
-  "maintainers": [
-    {
-      "name": "hiteshbal",
-      "email": "hitesh.baldaniya@raweng.com"
-    },
-    {
-      "name": "mynk",
-      "email": "mayank@raweng.com"
-    }
-  ],
-  "_npmOperationalInternal": {
-    "host": "packages-16-east.internal.npmjs.com",
-    "tmp": "tmp/contentstack-express-1.0.4.tgz_1466771324105_0.7166716509964317"
-  },
-  "directories": {},
-  "_resolved": "https://registry.npmjs.org/contentstack-express/-/contentstack-express-1.0.4.tgz",
-  "readme": "ERROR: No README data found!"
+  "author": "",
+  "license": "ISC"
 }

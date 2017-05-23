@@ -1,0 +1,16 @@
+{% extends "layouts/default.html" %}
+
+{% block content %}
+<section>
+    <div class="field">
+        <div class="key">Unique ID</div>
+        <div class="value">{{entry.uid}}</div>
+    </div>
+    _content_
+    <div class="note" style="margin: 50px 0 0;">
+        <div class="key">Note:</div>
+        <div class="value" style="width: 100%; font-size: 15px;"><i>Template automatically generated at "_path_"</i></div>
+    </div>
+</section>
+{% endblock %}
+

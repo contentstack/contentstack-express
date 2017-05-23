@@ -1,0 +1,254 @@
+{
+  "stats": {
+    "asserts": 35,
+    "passes": 35,
+    "failures": 0
+  },
+  "asserts": [
+    {
+      "number": 1,
+      "comment": "Login the user with given credentials",
+      "name": "Authenticated",
+      "ok": true,
+      "extra": {}
+    },
+    {
+      "number": 2,
+      "comment": "Get the environments",
+      "name": "Environment found",
+      "ok": true,
+      "extra": {}
+    },
+    {
+      "number": 3,
+      "comment": "[en-us]Publish the \"Source\" entry from the server",
+      "name": "Entry fetched",
+      "ok": true,
+      "extra": {}
+    },
+    {
+      "number": 4,
+      "comment": "[en-us]Publish the \"Source\" entry from the server",
+      "name": "Entry event.",
+      "ok": true,
+      "extra": {}
+    },
+    {
+      "number": 5,
+      "comment": "[en-us]Find the \"Source\" entry from the server",
+      "name": "Not Recent published entry found.",
+      "ok": true,
+      "extra": {}
+    },
+    {
+      "number": 6,
+      "comment": "[en-us]Find the \"Source\" entry from the server",
+      "name": "Not Recent published entry found.",
+      "ok": true,
+      "extra": {}
+    },
+    {
+      "number": 7,
+      "comment": "[en-us]Find the \"Source\" entry from the server",
+      "name": "Recent published entry found.",
+      "ok": true,
+      "extra": {}
+    },
+    {
+      "number": 8,
+      "comment": "[en-us]Unpublish the \"Source\" entry from the server",
+      "name": "Entry event.",
+      "ok": true,
+      "extra": {}
+    },
+    {
+      "number": 9,
+      "comment": "[en-us]Find the \"Source\" entry from the server",
+      "name": "Published_at not found in an entry.",
+      "ok": true,
+      "extra": {}
+    },
+    {
+      "number": 10,
+      "comment": "[en-us]Find the \"Source\" entry from the server",
+      "name": "Recent unpublished entry found.",
+      "ok": true,
+      "extra": {}
+    },
+    {
+      "number": 11,
+      "comment": "[en-us]Schedule Publish the \"Source\" entry from the server",
+      "name": "Entry fetched",
+      "ok": true,
+      "extra": {}
+    },
+    {
+      "number": 12,
+      "comment": "[en-us]Schedule Publish the \"Source\" entry from the server",
+      "name": "Entry event.",
+      "ok": true,
+      "extra": {}
+    },
+    {
+      "number": 13,
+      "comment": "[en-us]Find the Scheduled \"Source\" entry from the server",
+      "name": "Scheduled-Published_at not found in an entry.",
+      "ok": true,
+      "extra": {}
+    },
+    {
+      "number": 14,
+      "comment": "[en-us]Find the Scheduled \"Source\" entry from the server",
+      "name": "Scheduled-Published_at not found in an entry.",
+      "ok": true,
+      "extra": {}
+    },
+    {
+      "number": 15,
+      "comment": "[en-us]Find the Scheduled \"Source\" entry from the server",
+      "name": "Scheduled-Published_at not found in an entry.",
+      "ok": true,
+      "extra": {}
+    },
+    {
+      "number": 16,
+      "comment": "[en-us]Find the Scheduled \"Source\" entry from the server",
+      "name": "Scheduled-Published_at not found in an entry.",
+      "ok": true,
+      "extra": {}
+    },
+    {
+      "number": 17,
+      "comment": "[en-us]Find the Scheduled \"Source\" entry from the server",
+      "name": "Scheduled-Published_at not found in an entry.",
+      "ok": true,
+      "extra": {}
+    },
+    {
+      "number": 18,
+      "comment": "[en-us]Find the Scheduled \"Source\" entry from the server",
+      "name": "Scheduled-Published_at not found in an entry.",
+      "ok": true,
+      "extra": {}
+    },
+    {
+      "number": 19,
+      "comment": "[en-us]Find the Scheduled \"Source\" entry from the server",
+      "name": "Scheduled-Published_at not found in an entry.",
+      "ok": true,
+      "extra": {}
+    },
+    {
+      "number": 20,
+      "comment": "[en-us]Find the Scheduled \"Source\" entry from the server",
+      "name": "Scheduled-Published_at not found in an entry.",
+      "ok": true,
+      "extra": {}
+    },
+    {
+      "number": 21,
+      "comment": "[en-us]Find the Scheduled \"Source\" entry from the server",
+      "name": "Scheduled-Published_at not found in an entry.",
+      "ok": true,
+      "extra": {}
+    },
+    {
+      "number": 22,
+      "comment": "[en-us]Find the Scheduled \"Source\" entry from the server",
+      "name": "Scheduled-Published_at not found in an entry.",
+      "ok": true,
+      "extra": {}
+    },
+    {
+      "number": 23,
+      "comment": "[en-us]Find the Scheduled \"Source\" entry from the server",
+      "name": "Scheduled-Published_at not found in an entry.",
+      "ok": true,
+      "extra": {}
+    },
+    {
+      "number": 24,
+      "comment": "[en-us]Find the Scheduled \"Source\" entry from the server",
+      "name": "Scheduled-Published_at not found in an entry.",
+      "ok": true,
+      "extra": {}
+    },
+    {
+      "number": 25,
+      "comment": "[en-us]Find the Scheduled \"Source\" entry from the server",
+      "name": "Recent scheduled-published entry found.",
+      "ok": true,
+      "extra": {}
+    },
+    {
+      "number": 26,
+      "comment": "[en-us]Schedule unpublish the \"Source\" entry from the server",
+      "name": "Entry event.",
+      "ok": true,
+      "extra": {}
+    },
+    {
+      "number": 27,
+      "comment": "[en-us]Find the Scheduled \"Source\" entry from the server",
+      "name": "Not Recent scheduled-unpublished entry found.",
+      "ok": true,
+      "extra": {}
+    },
+    {
+      "number": 28,
+      "comment": "[en-us]Find the Scheduled \"Source\" entry from the server",
+      "name": "Not Recent scheduled-unpublished entry found.",
+      "ok": true,
+      "extra": {}
+    },
+    {
+      "number": 29,
+      "comment": "[en-us]Find the Scheduled \"Source\" entry from the server",
+      "name": "Not Recent scheduled-unpublished entry found.",
+      "ok": true,
+      "extra": {}
+    },
+    {
+      "number": 30,
+      "comment": "[en-us]Find the Scheduled \"Source\" entry from the server",
+      "name": "Not Recent scheduled-unpublished entry found.",
+      "ok": true,
+      "extra": {}
+    },
+    {
+      "number": 31,
+      "comment": "[en-us]Find the Scheduled \"Source\" entry from the server",
+      "name": "Not Recent scheduled-unpublished entry found.",
+      "ok": true,
+      "extra": {}
+    },
+    {
+      "number": 32,
+      "comment": "[en-us]Find the Scheduled \"Source\" entry from the server",
+      "name": "Not Recent scheduled-unpublished entry found.",
+      "ok": true,
+      "extra": {}
+    },
+    {
+      "number": 33,
+      "comment": "[en-us]Find the Scheduled \"Source\" entry from the server",
+      "name": "Not Recent scheduled-unpublished entry found.",
+      "ok": true,
+      "extra": {}
+    },
+    {
+      "number": 34,
+      "comment": "[en-us]Find the Scheduled \"Source\" entry from the server",
+      "name": "Not Recent scheduled-unpublished entry found.",
+      "ok": true,
+      "extra": {}
+    },
+    {
+      "number": 35,
+      "comment": "[en-us]Find the Scheduled \"Source\" entry from the server",
+      "name": "Recent scheduled-unpublished entry found.",
+      "ok": true,
+      "extra": {}
+    }
+  ]
+}
