@@ -8,3 +8,5 @@ node_modules/contentstack-express/node_modules*
 node_modules/contentstack-express/*.zip
 *.zip
 themes/basic/templates/pages/
+config*/
+reports*/

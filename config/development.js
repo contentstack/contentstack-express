@@ -11,12 +11,12 @@ module.exports = exports = {
         //"socket": "https://stag-contentstack-realtime.built.io/"
 
         //stack name: references
-        "api_key": "bltade32e7a0dc1a8b0",
-        "access_token": "bltec8188d1452e3743"
+        //"api_key": "bltade32e7a0dc1a8b0",
+        //"access_token": "bltec8188d1452e3743"
 
         //stack name: contentstack-cli
-        //"api_key": "bltcc846b79b7ff031c",
-        //"access_token": "bltff1c228e8cc0160b"
+        "api_key": "bltcc846b79b7ff031c",
+        "access_token": "bltff1c228e8cc0160b"
 
          //stack name: master languages
         //"api_key": "blt79422eea504713be",
