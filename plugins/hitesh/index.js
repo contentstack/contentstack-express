@@ -13,15 +13,13 @@ var Stack = contentstack.Stack();
 module.exports = function Hitesh() {
    Hitesh.serverExtends = function(app) {
        app
-           .get("/test", function (req, res, next) {
+           .get("/test-asset-entry", function (req, res, next) {
                var Query = Stack
-                   .ContentType("references_file_100_assets")
+                   .Assets()
+                   .language('en-us')
                    .Query();
 
                Query
-                   .skip(0)
-                   .limit(75)
-                   .includeCount()
                    .toJSON()
                    .find()
                    .then(function (data) {
