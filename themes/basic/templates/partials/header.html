@@ -1,5 +1,6 @@
 {# If you have a form for header in Built.io Contentstack then use get() view helper to retrieve header entry. #}
 {# e.g. set header = get("header_form_id") #}
 {# And then render header values using the {{header.field_name}} #}
+
 {% set header = get("header") %}
 {{ header | json }}
