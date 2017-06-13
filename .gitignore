@@ -2,3 +2,5 @@ node_modules/*
 examples/*/_content/*
 examples/*/_logs/*
 examples/*/node_modules/*
+gitflow*/
+.idea*/
