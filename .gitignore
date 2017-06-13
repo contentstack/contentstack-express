@@ -1,6 +1,7 @@
 node_modules/*
 examples/*/_content/*
 examples/*/_logs/*
+examples/*/config/*
 examples/*/node_modules/*
 gitflow*/
 .idea*/
