@@ -1,12 +1,4 @@
-gitflow*/
-.idea*/
-_content*/
-_logs*/
-plugins/*/node_modules/
-node_modules/contentstack-*.zip
-node_modules/contentstack-express/node_modules*
-node_modules/contentstack-express/*.zip
-*.zip
-themes/basic/templates/pages/
-config*/
-reports*/
+node_modules/*
+examples/*/_content/*
+examples/*/_logs/*
+examples/*/node_modules/*

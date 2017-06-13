@@ -1,26 +1,102 @@
 {
-  "name": "contentstack-nodejs-framework",
-  "version": "3.0.1",
-  "description": "",
-  "main": "index.js",
+  "_args": [
+    [
+      {
+        "raw": "contentstack-express@^1.0.0",
+        "scope": null,
+        "escapedName": "contentstack-express",
+        "name": "contentstack-express",
+        "rawSpec": "^1.0.0",
+        "spec": ">=1.0.0 <2.0.0",
+        "type": "range"
+      },
+      "D:\\project\\stag-new-contentstack\\blog-demo"
+    ]
+  ],
+  "_from": "contentstack-express@>=1.0.0 <2.0.0",
+  "_id": "contentstack-express@3.0.0",
+  "_inCache": true,
+  "_location": "/contentstack-express",
+  "_nodeVersion": "4.4.2",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/contentstack-express-3.0.0.tgz_1466771324105_0.7166716509964317"
+  },
+  "_npmUser": {
+    "name": "hiteshbal",
+    "email": "hitesh.baldaniya@raweng.com"
+  },
+  "_npmVersion": "2.15.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "contentstack-express@^1.0.0",
+    "scope": null,
+    "escapedName": "contentstack-express",
+    "name": "contentstack-express",
+    "rawSpec": "^1.0.0",
+    "spec": ">=1.0.0 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/contentstack-express/-/contentstack-express-1.0.4.tgz",
+  "_shasum": "74c1fcf6a5261c1ba98f47bcaa5b53183383a570",
+  "_shrinkwrap": null,
+  "_spec": "contentstack-express@^1.0.0",
+  "_where": "D:\\project\\stag-new-contentstack\\blog-demo",
+  "author": {
+    "name": "Built.io Contentstack",
+    "url": "https://www.built.io/"
+  },
   "dependencies": {
-    "contentstack-express": "^3.0.0"
+    "async": "2.1.2",
+    "consolidate": "0.14.5",
+    "express": "4.14.0",
+    "graceful-fs": "4.1.10",
+    "htmlclean": "2.7.7",
+    "lodash": "3.10.1",
+    "methods": "1.1.2",
+    "mkdirp": "0.5.1",
+    "nedb": "1.8.0",
+    "nunjucks": "3.0.0",
+    "on-headers": "1.0.1",
+    "pagedown": "1.1.0",
+    "path-to-regexp": "1.7.0",
+    "request": "2.79.0",
+    "serve-favicon": "2.3.2",
+    "sift": "3.2.6",
+    "socket.io-client": "1.4.5",
+    "when": "3.7.7",
+    "winston": "2.3.0"
   },
-  "devDependencies": {
-    "lodash": "^4.11.0",
-    "mkdirp": "^0.5.1",
-    "request-promise": "^3.0.0",
-    "tap-json": "^0.1.1",
-    "tape": "^4.5.1",
-    "when": "^3.7.7"
+  "description": "Built.io Contentstack web application framework based on Express.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "74c1fcf6a5261c1ba98f47bcaa5b53183383a570",
+    "tarball": "https://registry.npmjs.org/contentstack-express/-/contentstack-express-1.0.4.tgz"
   },
-  "scripts": {
-    "test": "node test"
+  "engineStrict" : true,
+  "engines": {
+    "node": ">=4.2.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@raw-engineering-inc.git.beanstalkapp.com:/raw-engineering-inc/contentstack-nodejs-framework.git"
-  },
-  "author": "",
-  "license": "ISC"
+  "homepage": "https://www.built.io/products/contentstack/overview",
+  "license": "MIT",
+  "main": "contentstack.js",
+  "maintainers": [
+    {
+      "name": "hiteshbal",
+      "email": "hitesh.baldaniya@raweng.com"
+    },
+    {
+      "name": "mynk",
+      "email": "mayank@raweng.com"
+    }
+  ],
+  "name": "contentstack-express",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "scripts": {},
+  "version": "3.0.1"
 }
