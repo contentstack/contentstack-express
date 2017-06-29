@@ -1,5 +1,6 @@
 module.exports = exports = {
-    port: 4000,
+    port: 5000,
+    cache: false,
     theme: "basic",
     languages: [
         {
@@ -15,7 +16,7 @@ module.exports = exports = {
         demo:{}
     },
     contentstack: {
-        "api_key": "stack_api_key",
-        "access_token": "stack_access_token"
+        "api_key": "blt233c9f05c045ff3a",
+        "access_token": "blt1384f3820d240fcc"
     }
 };

@@ -8,6 +8,7 @@
  * Module dependencies
  */
 var contentstack = require("./../../../../contentstack.js"); // replace path with 'contentstack-express' on your environment
+var _ =require('lodash');
 
 module.exports = function Demo() {
 
