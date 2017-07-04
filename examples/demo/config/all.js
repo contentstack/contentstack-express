@@ -1,6 +1,6 @@
 module.exports = exports = {
     port: 5000,
-    cache: false,
+    cache: true,
     theme: "basic",
     languages: [
         {
