@@ -16,7 +16,7 @@ module.exports = exports = {
         demo:{}
     },
     contentstack: {
-        "api_key": "blt233c9f05c045ff3a",
-        "access_token": "blt1384f3820d240fcc"
+        "api_key": "api_key",
+        "access_token": "access_token"
     }
 };
