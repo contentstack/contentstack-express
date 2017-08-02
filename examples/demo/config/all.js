@@ -8,7 +8,9 @@ module.exports = exports = {
         }
     ],
     contentstack: {
-        "api_key": "api_key",
-        "access_token": "access_token"
+         "host": "https://dev-new-api.contentstack.io",
+         "socket": "https://dev-realtime.contentstack.io/",
+        "api_key": "bltbdce0aa5261206bd",
+        "access_token": "blt6fe967d6e2604501"
     }
 };
