@@ -54,6 +54,7 @@
     "consolidate": "0.14.5",
     "express": "4.14.0",
     "graceful-fs": "4.1.10",
+    "helmet": "3.8.1",
     "htmlclean": "2.7.7",
     "lodash": "3.10.1",
     "methods": "1.1.2",
