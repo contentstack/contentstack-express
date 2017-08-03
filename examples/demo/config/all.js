@@ -10,5 +10,6 @@ module.exports = exports = {
     contentstack: {
        api_key: "api_key",
        access_token: "access_token"
+
     }
 };
