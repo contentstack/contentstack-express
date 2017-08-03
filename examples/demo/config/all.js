@@ -7,8 +7,12 @@ module.exports = exports = {
             "relative_url_prefix": "/"
         }
     ],
+    security: {
+        hidePoweredBy: true,
+        dnsPrefetchControl: true
+    },
     contentstack: {
-        "api_key": "api_key",
-        "access_token": "asset_token"
+        "api_key": "blt2185f3fd1aa6565d",
+        "access_token": "blt8840eb43c902a21a0c5dc202"
     }
 };
