@@ -8,6 +8,7 @@ var contentstack = require("../../contentstack.js"), //replace path with content
 /**
  * start the application
  */
+
 app.listen(port, function () {
     console.log("Server(%s) is running on '%s' environment over %d port", server, environment, port);
 });
