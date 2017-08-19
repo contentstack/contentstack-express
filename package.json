@@ -13,20 +13,20 @@
       "D:\\project\\stag-new-contentstack\\blog-demo"
     ]
   ],
-  "_from": "contentstack-express@>=1.0.0 <2.0.0",
-  "_id": "contentstack-express@3.0.0",
+  "_from": "contentstack-express@1.0.6",
+  "_id": "contentstack-express@1.0.6",
   "_inCache": true,
   "_location": "/contentstack-express",
-  "_nodeVersion": "4.4.2",
+  "_nodeVersion": "6.10.1",
   "_npmOperationalInternal": {
-    "host": "packages-16-east.internal.npmjs.com",
-    "tmp": "tmp/contentstack-express-3.0.0.tgz_1466771324105_0.7166716509964317"
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/contentstack-express-1.0.6.tgz_1490950797666_0.8156277225352824"
   },
   "_npmUser": {
     "name": "hiteshbal",
     "email": "hitesh.baldaniya@raweng.com"
   },
-  "_npmVersion": "2.15.0",
+  "_npmVersion": "3.10.10",
   "_phantomChildren": {},
   "_requested": {
     "raw": "contentstack-express@^1.0.0",
@@ -40,8 +40,8 @@
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/contentstack-express/-/contentstack-express-1.0.4.tgz",
-  "_shasum": "74c1fcf6a5261c1ba98f47bcaa5b53183383a570",
+  "_resolved": "https://registry.npmjs.org/contentstack-express/-/contentstack-express-1.0.6.tgz",
+  "_shasum": "3151f148d1bf7a12f25b1f39a72172fcb50ff9bf",
   "_shrinkwrap": null,
   "_spec": "contentstack-express@^1.0.0",
   "_where": "D:\\project\\stag-new-contentstack\\blog-demo",
@@ -54,6 +54,7 @@
     "consolidate": "0.14.5",
     "express": "4.14.0",
     "graceful-fs": "4.1.10",
+    "helmet": "3.8.1",
     "htmlclean": "2.7.7",
     "lodash": "3.10.1",
     "methods": "1.1.2",
@@ -74,10 +75,10 @@
   "devDependencies": {},
   "directories": {},
   "dist": {
-    "shasum": "74c1fcf6a5261c1ba98f47bcaa5b53183383a570",
-    "tarball": "https://registry.npmjs.org/contentstack-express/-/contentstack-express-1.0.4.tgz"
+    "shasum": "3151f148d1bf7a12f25b1f39a72172fcb50ff9bf",
+    "tarball": "https://registry.npmjs.org/contentstack-express/-/contentstack-express-1.0.6.tgz"
   },
-  "engineStrict" : true,
+  "engineStrict": true,
   "engines": {
     "node": ">=4.2.0"
   },
@@ -96,7 +97,7 @@
   ],
   "name": "contentstack-express",
   "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
   "scripts": {},
-  "version": "3.0.2"
+  "version": "1.0.7",
+  "readme": "ERROR: No README data found!"
 }
