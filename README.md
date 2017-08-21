@@ -1,8 +1,11 @@
-[![Built.io Contentstack](https://contentstackdocs.built.io/static/images/logo.png)](http://contentstack.io)
+[![Built.io Contentstack](https://contentstackdocs.built.io/static/images/logo.png)](https://www.built.io/products/contentstack/overview)
 
 # Built.io Contentstack web application framework based on Express
 
 ## Install CLI
+
+**Note: This version of Built.io Contentstack CLI & Contentstack Express can be used only for V3 stacks. Use CLI version 1.x, for V2 stacks.**
+
 Run the following command in a Terminal or Command Prompt to globally install the latest version of Built.io Contentstack CLI on your system:
 ```bash
 $ npm install -g contentstack-cli
@@ -40,8 +43,8 @@ $ npm start
 ```
 
 ## Links
-- [Website](http://contentstack.io/)
-- [Official Documentation](http://contentstackdocs.built.io/developer/web/quickstart)
+- [Website](https://www.built.io/products/contentstack/overview)
+- [Official Documentation](https://contentstackdocs.built.io/developer/web/quickstart)
 
 ### License
-Copyright © 2012-2016 [Built.io](https://www.built.io/). All Rights Reserved.
+Copyright © 2012-2017 [Built.io](https://www.built.io/). All Rights Reserved.
