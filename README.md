@@ -44,4 +44,4 @@ $ npm start
 - [Official Documentation](http://contentstackdocs.built.io/developer/web/quickstart)
 
 ### License
-Copyright © 2012-2016 [Built.io](https://www.built.io/). All Rights Reserved.
+Copyright © 2012-2017 [Built.io](https://www.built.io/). All Rights Reserved.
