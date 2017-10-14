@@ -44,7 +44,8 @@ $ npm start
 
 ## Links
 - [Website](https://www.built.io/products/contentstack/overview)
-- [Official Documentation](https://contentstackdocs.built.io/developer/web/quickstart)
+- [Official Documentation](https://www.contentstack.com//docs/tools-and-frameworks/web-framework-contentstack-express
+)
 
 ### License
 Copyright © 2012-2017 [Built.io](https://www.built.io/). All Rights Reserved.
