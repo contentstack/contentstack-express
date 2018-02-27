@@ -1,0 +1,39 @@
+{
+  "name": "contentstack-cli",
+  "version": "1.0.0",
+  "description": "Contentstack's provider utility",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/iyerrama29/contentstack-cli.git"
+  },
+  "keywords": [
+    "contentstack",
+    "contentstack-cli",
+    "contentstack-provider"
+  ],
+  "author": "contentstack",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/iyerrama29/contentstack-cli/issues"
+  },
+  "homepage": "https://gitlab.com/iyerrama29/contentstack-cli#README",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "chai": "^4.1.2",
+    "lodash": "^4.17.4",
+    "mkdirp": "^0.5.1",
+    "mocha": "^4.1.0",
+    "mongodb": "^3.0.2",
+    "path-to-regexp": "^2.1.0",
+    "request": "^2.83.0",
+    "rimraf": "^2.6.2",
+    "sift": "^5.0.0"
+  }
+}
