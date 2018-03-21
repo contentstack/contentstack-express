@@ -69,7 +69,8 @@
     "sift": "3.2.6",
     "socket.io-client": "1.4.5",
     "when": "3.7.7",
-    "winston": "2.3.0"
+    "winston": "2.3.0",
+    "write-file-atomic": "^2.3.0"
   },
   "description": "Built.io Contentstack web application framework based on Express.",
   "devDependencies": {},
