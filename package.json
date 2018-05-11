@@ -9,12 +9,11 @@
         "rawSpec": "^1.0.0",
         "spec": ">=1.0.0 <2.0.0",
         "type": "range"
-      },
-      "D:\\project\\stag-new-contentstack\\blog-demo"
+      }
     ]
   ],
   "_from": "contentstack-express@>=3.0.0 <4.0.0",
-  "_id": "contentstack-express@3.0.3",
+  "_id": "contentstack-express@3.1.9",
   "_inCache": true,
   "_location": "/contentstack-express",
   "_nodeVersion": "4.8.4",
@@ -44,10 +43,9 @@
   "_shasum": "74c1fcf6a5261c1ba98f47bcaa5b53183383a570",
   "_shrinkwrap": null,
   "_spec": "contentstack-express@^1.0.0",
-  "_where": "D:\\project\\stag-new-contentstack\\blog-demo",
   "author": {
-    "name": "Built.io Contentstack",
-    "url": "https://www.built.io/"
+    "name": "Contentstack",
+    "url": "https://www.contentstack.com"
   },
   "dependencies": {
     "async": "2.1.2",
@@ -72,7 +70,7 @@
     "winston": "2.3.0",
     "write-file-atomic": "^2.3.0"
   },
-  "description": "Built.io Contentstack web application framework based on Express.",
+  "description": "Contentstack web application framework based on Express.",
   "devDependencies": {},
   "directories": {},
   "dist": {
@@ -95,6 +93,10 @@
     {
       "name": "mynk",
       "email": "mayank@raweng.com"
+    }
+    {
+      "name": "ninad",
+      "email": "ninad.hatkar@contentstack.com"
     }
   ],
   "name": "contentstack-express",
