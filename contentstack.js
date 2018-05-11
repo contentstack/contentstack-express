@@ -30,7 +30,7 @@ framework.Stack = function() {
  * @method  providers
  * @description : Current provider's connection string. Access provider methods directly without wrappers.
  */
-framework.provider = utils.providers;
+framework.db = utils.providers;
 
 /**
  * @method logger
