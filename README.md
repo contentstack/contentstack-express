@@ -1,4 +1,4 @@
-[![Contentstack](https://www.contentstack.com/docs/static/images/contentstack.png)](https://www.built.io/products/contentstack/overview)
+[![Contentstack](https://www.contentstack.com/docs/static/images/contentstack.png)](https://www.contentstack.com/)
 
 # Contentstack web application framework based on Express
 
