@@ -43,8 +43,8 @@ $ npm start
 ```
 
 ## Links
-- [Website](https://www.built.io/products/contentstack/overview)
-- [Official Documentation](https://contentstackdocs.built.io/developer/web/quickstart)
+- [Website](https://www.contentstack.com/)
+- [Official Documentation](http://contentstack.com/docs)
 
 ### License
-Copyright © 2012-2017 [Built.io](https://www.built.io/). All Rights Reserved.
+Copyright © 2018 [Contentstack](https://www.contentstack.com/). All Rights Reserved.
