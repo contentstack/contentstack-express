@@ -12,13 +12,12 @@
 const io = require('socket.io-client'),
     _ = require('lodash');
 
-let utils = require('./../../utils/index'),
+let utils = require('./../../lib/utils/index'),
     helper = require('./helper'),
-    pkg = require('./../../../package.json'),
-    config = require('./../../config')();
+    pkg = require('../../package.json'),
+    config = require('../../lib/config')();
 
 module.exports = () => {
-
     let log = utils.sync,
         env,
         api_key = config.get('contentstack.api_key'),
@@ -28,10 +27,12 @@ module.exports = () => {
             queue: config.get('contentstack.host') + '/' + config.get('contentstack.version') + config.get('contentstack.urls.publish_queue'),
             all: config.get('contentstack.host') + '/' + config.get('contentstack.version') + config.get('contentstack.urls.publish_queue') + 'all',
             environment: config.get('contentstack.host') + '/' + config.get('contentstack.version') + config.get('contentstack.urls.environments') + config.get('environment'),
-            socket: config.get('contentstack.socket') + api_key
+            language: config.get('contentstack.host') + '/' + config.get('contentstack.version') + config.get('contentstack.urls.locales'),
+
+            socket: config.get('listener.config.socket') + api_key
         },
 
-        languages = config.get('languages'),
+        languages = [],
         headers = {
             api_key: api_key,
             access_token: access_token,
@@ -40,7 +41,7 @@ module.exports = () => {
     return function(proceed) {
         try {
             if (api_key && access_token) {
-                log.info("Running on ", server, "server and ", config.get('environment'), " environment...");
+                log.info("Running on", server, "server and", config.get('environment'), "environment...");
                 log.info("Attempting connection to the Built.io Contentstack server...");
                 let flag = true,
                     conn_id = Math.random(),
@@ -49,7 +50,6 @@ module.exports = () => {
                 let query = { query: 'api_key=' + api_key + "&conn_id=" + conn_id };
                 // connect on startup
                 let socket = io(urls.socket, query);
-
                 socket.on('error', (err) => {
                     log.error("Connection failed. Error: " + err);
                 });
@@ -161,6 +161,7 @@ module.exports = () => {
                                         });
                                     }
                                 });
+
                                 socket.emit('subscribe', {
                                     channel: 'notifications._cms_publish_queue.object',
                                     fetch: { query: query }
@@ -172,7 +173,9 @@ module.exports = () => {
                                         _query.created_at = {
                                             "$gte": last.toISOString()
                                         };
+                                        console.log("Query------->", _query)
                                         helper.queue(urls.all, _query, headers, (err, data) => {
+                                            console.log("error ----- ------:::", err, data);
                                             if (err) {
                                                 log.error("Unable to retrieve pending publish queue requests due to the following error. Check details and try again. Error: " + helper.message(err));
                                             } else {
@@ -206,18 +209,27 @@ module.exports = () => {
                                 flag = false;
                                 if (!err) {
                                     log.info("Connection authorized");
-                                    if (env) {
-                                        start(env);
-                                    } else {
-                                        helper.environment(urls.environment, headers, (err, data) => {
-                                            if (!err && data) {
-                                                env = data;
+                                    helper.languages(urls.language, headers, { "only[BASE][]": 'code' }, (err, data) => {
+                                        if (!err && data) {
+                                            languages = data;
+                                            config.set('languages', languages)
+                                            if (env) {
                                                 start(env);
                                             } else {
-                                                log.error(helper.message(err));
+                                                helper.environment(urls.environment, headers, (err, data) => {
+                                                    if (!err && data) {
+                                                        env = data;
+                                                        start(env);
+                                                    } else {
+                                                        log.error(helper.message(err));
+                                                    }
+                                                });
                                             }
-                                        });
-                                    }
+                                        } else {
+                                            log.error(helper.message(err));
+                                        }
+                                    })
+
                                 } else {
                                     log.error("Connection authorization failed. Error: " + helper.message(err));
                                     process.exit(0);
@@ -228,10 +240,9 @@ module.exports = () => {
                         socket.emit('auth', { authtoken: access_token }, synchronizer);
                     }
                 };
-
                 socket.once('connect', onConnect);
             } else {
-                throw new TypeError("Check Contentstack settings.");
+                throw new TypeError("Check Built.io Contentstack settings.");
             }
         } catch (e) {
             log.error("Connection failed. Error: " + e.message);

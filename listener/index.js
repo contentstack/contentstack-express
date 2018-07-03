@@ -9,6 +9,5 @@
 /*!
  * Module dependencies
  */
-let socket = require('./socket');
 
-module.exports = socket();
+module.exports = require('./websocket');

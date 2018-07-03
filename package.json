@@ -1,54 +1,22 @@
 {
-  "author": {
-    "name": "Contentstack",
-    "url": "https://www.contentstack.com"
-  },
-  "dependencies": {
-    "async": "2.1.2",
-    "consolidate": "0.14.5",
-    "express": "4.14.0",
-    "graceful-fs": "4.1.10",
-    "helmet": "3.8.1",
-    "htmlclean": "2.7.7",
-    "lodash": "3.10.1",
-    "methods": "1.1.2",
-    "mkdirp": "0.5.1",
-    "nedb": "1.8.0",
-    "nunjucks": "3.0.0",
-    "on-headers": "1.0.1",
-    "pagedown": "1.1.0",
-    "path-to-regexp": "1.7.0",
-    "request": "2.79.0",
-    "serve-favicon": "2.3.2",
-    "sift": "3.2.6",
-    "socket.io-client": "1.4.5",
-    "when": "3.7.7",
-    "winston": "2.3.0",
-    "write-file-atomic": "^2.3.0"
-  },
-  "description": "Contentstack web application framework based on Express.",
-  "engineStrict": true,
-  "engines": {
-    "node": ">=4.2.0"
-  },
-  "homepage": "https://contentstack.com",
-  "license": "MIT",
-  "main": "contentstack.js",
-  "maintainers": [
-    {
-      "name": "hiteshbal",
-      "email": "hitesh.baldaniya@raweng.com"
+    "name": "contentstack-sync",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
-    {
-      "name": "mynk",
-      "email": "mayank@raweng.com"
-    },
-    {
-      "name": "ninad",
-      "email": "ninad.hatkar@raweng.com"
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "async": "2.1.4",
+        "bluebird": "3.5.1",
+        "graceful-fs": "4.1.11",
+        "lodash": "4.17.4",
+        "mkdirp": "0.5.1",
+        "path-to-regexp": "2.2.1",
+        "request": "2.79.0",
+        "socket.io-client": "1.4.5",
+        "winston": "2.3.0"
     }
-  ],
-  "name": "contentstack-express",
-  "readme": "ERROR: No README data found!",
-  "version": "3.1.11"
 }
