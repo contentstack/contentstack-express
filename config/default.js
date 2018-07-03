@@ -1,7 +1,7 @@
 module.exports = {
     contentstack: {
-        api_key: "blt0a3f321885435767",
-        access_token: "bltf052afa18060994d"
+        api_key: "stack_api_key",
+        access_token: "stack_access_token"
     },
     listener: {
         name: "websocket",
