@@ -42,6 +42,11 @@ $ cd my-site
 $ npm start
 ```
 
+### Mod Features
+This customized mod contains the following changes
+- Content blocks with 'url' field, will not create routes
+- Finding assets in 'markdown' fields have been updated
+
 ## Links
 - [Website](https://www.contentstack.com/)
 - [Official Documentation](http://contentstack.com/docs)
