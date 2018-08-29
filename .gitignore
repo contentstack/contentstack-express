@@ -1,3 +1,4 @@
 node_modules/*
 gitflow*/
 .idea*/
+test/config/*
