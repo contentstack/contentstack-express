@@ -1,0 +1,36 @@
+{% extends "layouts/default.html" %}
+
+{% block content %}
+<section>
+    <div class="field">
+        <div class="key">Unique ID</div>
+        <div class="value">{{entry.uid}}</div>
+    </div>
+    
+			<div class='field'><div class='key'>Title</div><div class='value'>{{entry.title}}</div></div>
+			<div class='field'><div class='key'>URL</div><div class='value'>{{entry.url}}</div></div>
+			<div class='field'><div class='key'>Random no.</div><div class='value'>{{entry.random_no_}}</div></div>
+			<div class='field'><div class='key'>Boolean</div><div class='value'>{{entry.boolean}}</div></div>
+			<div class='field'>
+			<div class='key'>Select</div>
+				{% set entry_select = entry.select %}
+				{% for _entry_select in entry_select -%}
+			 <div class='group-field'> 
+					<div class='value'>{{ _entry_select }}</div>
+			 </div>
+				{%- endfor %}
+			</div>
+			<div class='field'>
+			<div class='key'>Reference to B</div>
+				{% set entry_reference_to_b = entry.reference_to_b %}
+				{% for _entry_reference_to_b in entry_reference_to_b -%}
+					<div class='value'>{{ _entry_reference_to_b.title }}</div>
+				{%- endfor %}
+			</div>
+    <div class="note" style="margin: 50px 0 0;">
+        <div class="key">Note:</div>
+        <div class="value" style="width: 100%; font-size: 15px;"><i>Template automatically generated at "/home/ramanathan/Documents/Contentstack/contentstack-express-app/themes/basic/templates/pages/external_reference/index.html"</i></div>
+    </div>
+</section>
+{% endblock %}
+
