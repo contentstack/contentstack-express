@@ -1,0 +1,25 @@
+{
+  "webhook": {
+    "name": "webhook_name",
+    "destinations": [
+      {
+        "target_url": "https://random-url.com/onpublish-unpublish/inmemory-updates",
+        "http_basic_auth": "",
+        "http_basic_password": "",
+        "custom_header": [
+          {
+            "_id": "random_id",
+            "value": "",
+            "header_name": ""
+          }
+        ]
+      }
+    ],
+    "channels": [
+      "content_types.demo.entries.environments.test.publish.success",
+      "content_types.demo.entries.environments.test.unpublish.success"
+    ],
+    "retry_policy": "manual",
+    "uid": "webhook_uid"
+  }
+}
