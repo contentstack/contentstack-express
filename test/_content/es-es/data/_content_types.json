@@ -1,8 +1,6 @@
 [
   {
     "_data": {
-      "created_at": "2018-08-20T10:28:32.402Z",
-      "updated_at": "2018-08-20T10:57:03.174Z",
       "title": "B",
       "uid": "b",
       "schema": [
@@ -42,6 +40,18 @@
           "multiple": false,
           "mandatory": false,
           "unique": false
+        },
+        {
+          "data_type": "reference",
+          "display_name": "Reference to C",
+          "reference_to": "c",
+          "field_metadata": {
+            "ref_multiple": false
+          },
+          "uid": "reference_to_c",
+          "multiple": false,
+          "mandatory": false,
+          "unique": false
         }
       ],
       "options": {
@@ -50,15 +60,15 @@
         "title": "title",
         "sub_title": []
       },
-      "references": {}
+      "references": {
+        "_data.reference": "c"
+      }
     },
     "_content_type_uid": "_content_types",
     "_uid": "b"
   },
   {
     "_data": {
-      "created_at": "2018-08-20T10:30:18.667Z",
-      "updated_at": "2018-08-20T10:57:03.049Z",
       "title": "Assets Only",
       "uid": "assets_only",
       "schema": [
@@ -203,8 +213,6 @@
   },
   {
     "_data": {
-      "created_at": "2018-08-20T10:25:13.524Z",
-      "updated_at": "2018-08-29T17:17:24.529Z",
       "title": "A",
       "uid": "a",
       "schema": [
@@ -347,8 +355,6 @@
   },
   {
     "_data": {
-      "created_at": "2018-08-20T10:44:50.888Z",
-      "updated_at": "2018-08-20T10:57:03.127Z",
       "title": "External Reference",
       "uid": "external_reference",
       "schema": [
@@ -461,5 +467,69 @@
     },
     "_content_type_uid": "_content_types",
     "_uid": "external_reference"
+  },
+  {
+    "_data": {
+      "title": "C",
+      "uid": "c",
+      "schema": [
+        {
+          "display_name": "Title",
+          "uid": "title",
+          "data_type": "text",
+          "mandatory": true,
+          "unique": true,
+          "field_metadata": {
+            "_default": true
+          },
+          "multiple": false
+        },
+        {
+          "display_name": "Number",
+          "uid": "number",
+          "data_type": "number",
+          "mandatory": false,
+          "field_metadata": {
+            "_default": true
+          },
+          "multiple": false,
+          "unique": false
+        },
+        {
+          "data_type": "number",
+          "display_name": "Random no.",
+          "uid": "random_no_",
+          "field_metadata": {
+            "description": "",
+            "default_value": null
+          },
+          "multiple": false,
+          "mandatory": false,
+          "unique": false
+        },
+        {
+          "data_type": "boolean",
+          "display_name": "Boolean",
+          "uid": "boolean",
+          "field_metadata": {
+            "description": "",
+            "default_value": ""
+          },
+          "multiple": false,
+          "mandatory": false,
+          "unique": false
+        }
+      ],
+      "options": {
+        "is_page": false,
+        "singleton": false,
+        "title": "title",
+        "sub_title": [],
+        "url_pattern": "/:title",
+        "url_prefix": "/"
+      }
+    },
+    "_content_type_uid": "_content_types",
+    "_uid": "c"
   }
 ]

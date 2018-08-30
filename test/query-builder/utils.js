@@ -32,45 +32,44 @@ exports.getData = function () {
 		content_type: {
 			title: 'Beta',
 			uid: 'beta',
-			schema: [
-		        {
-		          "display_name": "Title",
-		          "uid": "title",
-		          "data_type": "text",
-		          "mandatory": true,
-		          "unique": true,
-		          "field_metadata": {
-		            "_default": true
-		          },
-		          "multiple": false
-		        },
-		        {
-		          "data_type": "text",
-		          "display_name": "Rich text editor",
-		          "uid": "rich_text_editor",
-		          "field_metadata": {
-		            "allow_rich_text": true,
-		            "description": "",
-		            "multiline": false,
-		            "rich_text_type": "advanced"
-		          },
-		          "multiple": false,
-		          "mandatory": false,
-		          "unique": false
-		        },
-		        {
-		          "data_type": "text",
-		          "display_name": "Markdown",
-		          "uid": "markdown",
-		          "field_metadata": {
-		            "description": "",
-		            "markdown": true
-		          },
-		          "multiple": false,
-		          "mandatory": false,
-		          "unique": false
-		        }
-		    ]
+			schema: [{
+					"display_name": "Title",
+					"uid": "title",
+					"data_type": "text",
+					"mandatory": true,
+					"unique": true,
+					"field_metadata": {
+						"_default": true
+					},
+					"multiple": false
+				},
+				{
+					"data_type": "text",
+					"display_name": "Rich text editor",
+					"uid": "rich_text_editor",
+					"field_metadata": {
+						"allow_rich_text": true,
+						"description": "",
+						"multiline": false,
+						"rich_text_type": "advanced"
+					},
+					"multiple": false,
+					"mandatory": false,
+					"unique": false
+				},
+				{
+					"data_type": "text",
+					"display_name": "Markdown",
+					"uid": "markdown",
+					"field_metadata": {
+						"description": "",
+						"markdown": true
+					},
+					"multiple": false,
+					"mandatory": false,
+					"unique": false
+				}
+			]
 		}
 	};
 

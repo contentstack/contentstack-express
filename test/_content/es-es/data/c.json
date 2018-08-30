@@ -1,0 +1,57 @@
+[
+	{
+		"_data": {
+			"title": "One",
+			"uid": "c_one",
+			"number": 1,
+			"multiple": [1, 2],
+			"boolean": true
+		},
+	    "_content_type_uid": "c",
+	    "_uid": "c_one"
+	},
+	{
+		"_data": {
+			"title": "Two",
+			"uid": "c_two",
+			"number": 2,
+			"multiple": [2, 4],
+			"boolean": true
+		},
+	    "_content_type_uid": "c",
+	    "_uid": "c_two"
+	},
+	{
+		"_data": {
+			"title": "Three",
+			"uid": "c_three",
+			"number": 3,
+			"multiple": [3, 6],
+			"boolean": false
+		},
+	    "_content_type_uid": "c",
+	    "_uid": "c_three"
+	},
+	{
+		"_data": {
+			"title": "Four",
+			"uid": "c_four",
+			"number": 4,
+			"multiple": [4, 8],
+			"boolean": false
+		},
+	    "_content_type_uid": "c",
+	    "_uid": "c_four"
+	},
+	{
+		"_data": {
+			"title": "Five",
+			"uid": "c_five",
+			"number": 5,
+			"boolean": true,
+			"multiple": [5, 10]
+		},
+	    "_content_type_uid": "c",
+	    "_uid": "c_five"
+	}
+]
