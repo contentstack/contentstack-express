@@ -47,7 +47,7 @@ describe('Contentstack-Connector', function () {
 
 		require('./query-builder/upsert');
 		require('./query-builder/find');
-		require('./query-builder/query');
-		require('./query-builder/query-functions');
+		// require('./query-builder/query');
+		// require('./query-builder/query-functions');
 	});
 });
