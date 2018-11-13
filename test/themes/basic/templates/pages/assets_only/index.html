@@ -1,0 +1,74 @@
+{% extends "layouts/default.html" %}
+
+{% block content %}
+<section>
+    <div class="field">
+        <div class="key">Unique ID</div>
+        <div class="value">{{entry.uid}}</div>
+    </div>
+    
+			<div class='field'><div class='key'>Title</div><div class='value'>{{entry.title}}</div></div>
+			<div class='field'><div class='key'>URL</div><div class='value'>{{entry.url}}</div></div>
+			<div class='field'>
+			<div class='key'>Group</div>
+			<div class='group-field'>
+				<div class='field'>
+					<div class='key'>File 1(url) </div> <div class='file'><a href='{{getAssetUrl(entry.group.file_1)}}'>{{entry.group.file_1.filename}}</a></div>
+				</div>
+				<div class='field'>
+				<div class='key'>File 2</div>
+					{% set entry_group_file_2 = entry.group.file_2 %}
+					{% for _entry_group_file_2 in entry_group_file_2 -%}
+				 <div class='group-field'> 
+							<div class='file'><a href='{{getAssetUrl(_entry_group_file_2)}}'>{{_entry_group_file_2.filename}}</a></div>
+				 </div>
+					{%- endfor %}
+				</div>
+			</div>
+			</div>
+			<div class='field'>
+			<div class='key'>Modular Blocks</div>
+				{% set entry_modular_blocks = entry.modular_blocks %}
+				{% for _entry_modular_blocks in entry_modular_blocks -%}
+			 <div class='group-field'> 
+			{% if _entry_modular_blocks.block_one %}
+					<div class='field'><div class='key'>Block One</div>
+						<div class='field'>
+						<div class='key'>Reference</div>
+							{% set _entry_modular_blocks_block_one_reference = _entry_modular_blocks.block_one.reference %}
+							{% for __entry_modular_blocks_block_one_reference in _entry_modular_blocks_block_one_reference -%}
+								<div class='value'>{{ __entry_modular_blocks_block_one_reference.title }}</div>
+							{%- endfor %}
+						</div>
+						<div class='field'>
+						<div class='key'>Modular block Group</div>
+							{% set _entry_modular_blocks_block_one_modular_block_group = _entry_modular_blocks.block_one.modular_block_group %}
+							{% for __entry_modular_blocks_block_one_modular_block_group in _entry_modular_blocks_block_one_modular_block_group -%}
+						 <div class='group-field'> 
+									<div class='field'>
+										<div class='key'>File 3(url) </div> <div class='file'><a href='{{getAssetUrl(__entry_modular_blocks_block_one_modular_block_group.file_3)}}'>{{__entry_modular_blocks_block_one_modular_block_group.file_3.filename}}</a></div>
+									</div>
+									<div class='field'>
+									<div class='key'>File 4</div>
+										{% set __entry_modular_blocks_block_one_modular_block_group_file_4 = __entry_modular_blocks_block_one_modular_block_group.file_4 %}
+										{% for ___entry_modular_blocks_block_one_modular_block_group_file_4 in __entry_modular_blocks_block_one_modular_block_group_file_4 -%}
+									 <div class='group-field'> 
+												<div class='file'><a href='{{getAssetUrl(___entry_modular_blocks_block_one_modular_block_group_file_4)}}'>{{___entry_modular_blocks_block_one_modular_block_group_file_4.filename}}</a></div>
+									 </div>
+										{%- endfor %}
+									</div>
+						 </div>
+							{%- endfor %}
+						</div>
+					</div>
+			{% endif %}
+			 </div>
+				{%- endfor %}
+			</div>
+    <div class="note" style="margin: 50px 0 0;">
+        <div class="key">Note:</div>
+        <div class="value" style="width: 100%; font-size: 15px;"><i>Template automatically generated at "/home/ramanathan/Documents/Contentstack/contentstack-express-app/themes/basic/templates/pages/assets_only/index.html"</i></div>
+    </div>
+</section>
+{% endblock %}
+

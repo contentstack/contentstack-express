@@ -1,0 +1,129 @@
+[
+  {
+    "_data": {
+      "title": "External Reference Three v4",
+      "url": "/external-reference-three-v4",
+      "random_no_": 1,
+      "boolean": true,
+      "select": [
+        "b",
+        "c"
+      ],
+      "reference_to_b": {
+        "values": [
+          "b_one"
+        ],
+        "_content_type_id": "b"
+      },
+      "tags": [
+        "1 2",
+        "3"
+      ],
+      "locale": "es-es",
+      "uid": "external_reference_one",
+      "_version": 5,
+      "special_key": true
+    },
+    "_content_type_uid": "external_reference",
+    "_uid": "external_reference_one"
+  },
+  {
+    "_data": {
+      "title": "External Reference Two",
+      "url": "/external-reference-two",
+      "random_no_": 2,
+      "boolean": true,
+      "select": [
+        "a"
+      ],
+      "reference_to_b": {
+        "values": [],
+        "_content_type_id": "b"
+      },
+      "tags": [],
+      "locale": "es-es",
+      "uid": "external_reference_two",
+      "_version": 1
+    },
+    "_content_type_uid": "external_reference",
+    "_uid": "external_reference_two"
+  },
+  {
+    "_data": {
+      "title": "External Reference One",
+      "url": "/external-reference-one",
+      "reference_to_b": {
+        "values": [
+          "b_one"
+        ],
+        "_content_type_id": "b"
+      },
+      "tags": [
+        "a",
+        "b"
+      ],
+      "locale": "es-es",
+      "uid": "external_reference_three",
+      "_version": 4,
+      "random_no_": 3,
+      "boolean": false,
+      "select": [
+        "d"
+      ]
+    },
+    "_content_type_uid": "external_reference",
+    "_uid": "external_reference_three"
+  },
+  {
+    "_data": {
+      "title": "External Reference four",
+      "url": "/external-reference-four",
+      "reference_to_b": {
+        "values": [
+          "b_one"
+        ],
+        "_content_type_id": "b"
+      },
+      "tags": [
+        "a",
+        "b"
+      ],
+      "locale": "es-es",
+      "uid": "external_reference_four",
+      "_version": 4,
+      "random_no_": 4,
+      "boolean": false,
+      "select": [
+        "d"
+      ]
+    },
+    "_content_type_uid": "external_reference",
+    "_uid": "external_reference_four"
+  },
+  {
+    "_data": {
+      "title": "External Reference five",
+      "url": "/external-reference-five",
+      "reference_to_b": {
+        "values": [
+          "b_one"
+        ],
+        "_content_type_id": "b"
+      },
+      "tags": [
+        "a",
+        "b"
+      ],
+      "locale": "es-es",
+      "uid": "external_reference_five",
+      "_version": 4,
+      "random_no_": 5,
+      "boolean": false,
+      "select": [
+        "d"
+      ]
+    },
+    "_content_type_uid": "external_reference",
+    "_uid": "external_reference_five"
+  }
+]

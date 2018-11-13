@@ -1,0 +1,55 @@
+{% extends "layouts/default.html" %}
+
+{% block content %}
+<section>
+    <div class="field">
+        <div class="key">Unique ID</div>
+        <div class="value">{{entry.uid}}</div>
+    </div>
+    
+			<div class='field'><div class='key'>Title</div><div class='value'>{{entry.title}}</div></div>
+			<div class='field'><div class='key'>URL</div><div class='value'>{{entry.url}}</div></div>
+			<div class='field'>
+				<div class='key'>File(url) </div> <div class='file'><a href='{{getAssetUrl(entry.file)}}'>{{entry.file.filename}}</a></div>
+			</div>
+			<div class='field'><div class='key'>Rich text editor</div><div class='value'>{{entry.rich_text_editor}}</div></div>
+			<div class='field'>
+			<div class='key'>Modular Blocks</div>
+				{% set entry_modular_blocks = entry.modular_blocks %}
+				{% for _entry_modular_blocks in entry_modular_blocks -%}
+			 <div class='group-field'> 
+			{% if _entry_modular_blocks.block_one %}
+					<div class='field'><div class='key'>Block One</div>
+						<div class='field'>
+						<div class='key'>Self Reference</div>
+							{% set _entry_modular_blocks_block_one_self_reference = _entry_modular_blocks.block_one.self_reference %}
+							{% for __entry_modular_blocks_block_one_self_reference in _entry_modular_blocks_block_one_self_reference -%}
+								<div class='value'>{{ __entry_modular_blocks_block_one_self_reference.title }}</div>
+							{%- endfor %}
+						</div>
+					</div>
+			{% endif %}
+			{% if _entry_modular_blocks.grouping %}
+					<div class='field'><div class='key'>Grouping</div>
+						<div class='field'>
+						<div class='key'>Group</div>
+							{% set _entry_modular_blocks_grouping_group = _entry_modular_blocks.grouping.group %}
+							{% for __entry_modular_blocks_grouping_group in _entry_modular_blocks_grouping_group -%}
+						 <div class='group-field'> 
+									<div class='field'><div class='key'>Single line textbox</div><div class='value'>{{__entry_modular_blocks_grouping_group.single_line}}</div></div>
+									<div class='field'><div class='key'>Number</div><div class='value'>{{__entry_modular_blocks_grouping_group.number}}</div></div>
+						 </div>
+							{%- endfor %}
+						</div>
+					</div>
+			{% endif %}
+			 </div>
+				{%- endfor %}
+			</div>
+    <div class="note" style="margin: 50px 0 0;">
+        <div class="key">Note:</div>
+        <div class="value" style="width: 100%; font-size: 15px;"><i>Template automatically generated at "/home/ramanathan/Documents/Contentstack/contentstack-express-app/themes/basic/templates/pages/a/index.html"</i></div>
+    </div>
+</section>
+{% endblock %}
+

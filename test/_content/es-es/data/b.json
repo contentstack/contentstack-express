@@ -1,0 +1,53 @@
+[
+  {
+    "_data": {
+      "title": "Block 1",
+      "rich_text_editor": "<h4 name=\"da6e\" id=\"da6e\" class=\"graf graf--h4 graf-after--p\" style=\"font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; letter-spacing: -0.012em; margin-top: 30px; margin-bottom: 0px; margin-left: -1.63px; color: rgba(0, 0, 0, 0.84); --baseline-multiplier:0.22; font-size: 26px; line-height: 1.22; background-color: rgb(255, 255, 255);\">Observer Guarantees</h4><ol class=\"postList\" style=\"margin-top: 10px; margin-bottom: 0px; padding-left: 0px; list-style: none none; counter-reset: post 0; color: rgba(0, 0, 0, 0.84); font-family: medium-content-sans-serif-font, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif; font-size: 20px; background-color: rgb(255, 255, 255);\"><li name=\"13eb\" id=\"13eb\" class=\"graf graf--li graf-after--h4\" style=\"margin-left: 30px; margin-bottom: 14px; --baseline-multiplier:0.17; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; font-size: 21px; line-height: 1.58; letter-spacing: -0.003em;\">If you pass an Observer doesn’t have&nbsp;<em class=\"markup--em markup--li-em\" style=\"font-feature-settings: &quot;liga&quot;, &quot;salt&quot;;\">all</em>&nbsp;of the methods implemented, that’s okay.</li><li name=\"44dc\" id=\"44dc\" class=\"graf graf--li graf-after--li\" style=\"margin-left: 30px; margin-bottom: 14px; --baseline-multiplier:0.17; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; font-size: 21px; line-height: 1.58; letter-spacing: -0.003em;\">You don’t want to call `next` after a `complete` or an `error`</li><li name=\"866b\" id=\"866b\" class=\"graf graf--li graf-after--li\" style=\"margin-left: 30px; margin-bottom: 14px; --baseline-multiplier:0.17; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; font-size: 21px; line-height: 1.58; letter-spacing: -0.003em;\">You don’t want anything called if you’ve unsubscribed.</li><li name=\"f235\" id=\"f235\" class=\"graf graf--li graf-after--li\" style=\"margin-left: 30px; margin-bottom: 14px; --baseline-multiplier:0.17; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; font-size: 21px; line-height: 1.58; letter-spacing: -0.003em;\">Calls to `complete` and `error` need to call unsubscription logic.</li><li name=\"630f\" id=\"630f\" class=\"graf graf--li graf-after--li\" style=\"margin-left: 30px; margin-bottom: 14px; --baseline-multiplier:0.17; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; font-size: 21px; line-height: 1.58; letter-spacing: -0.003em;\">If your `next`, `complete` or `error` handler throws an exception, you want to call your unsubscription logic so you don’t leak resources.</li><li name=\"97fc\" id=\"97fc\" class=\"graf graf--li graf-after--li\" style=\"margin-left: 30px; --baseline-multiplier:0.17; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; font-size: 21px; line-height: 1.58; letter-spacing: -0.003em;\">`next`, `error` and `complete` are all actually optional. You don’t have to handle every value, or errors or completions. You might just want to handle one or two of those things.</li></ol>",
+      "markdown": "**Observer Guarantees**\n\n - If you pass an Observer doesn’t have all of the methods implemented,\n   that’s okay. You don’t want to call `next` after a `complete` or an\n   `error` You don’t want anything called if you’ve unsubscribed. Calls\n   to `complete` and `error` need to call unsubscription logic. If your\n   `next`, `complete` or `error` handler throws an exception, you want\n   to call your unsubscription logic so you don’t leak resources.\n   `next`, `error` and `complete` are all actually optional. You don’t\n   have to handle every value, or errors or completions. You might just\n   want to handle one or two of those things.",
+      "tags": [],
+      "locale": "es-es",
+      "reference": {
+        "values": ["c_one", "c_two"],
+        "_content_type_id": "c"
+      },
+      "uid": "b_one",
+      "_version": 1
+    },
+    "_content_type_uid": "b",
+    "_uid": "b_one"
+  },
+  {
+    "_data": {
+      "title": "Block 2",
+      "rich_text_editor": "",
+      "markdown": "",
+      "tags": [],
+      "locale": "es-es",
+      "reference": {
+        "values": ["c_three", "c_four"],
+        "_content_type_id": "c"
+      },
+      "uid": "b_two",
+      "_version": 1
+    },
+    "_content_type_uid": "b",
+    "_uid": "b_two"
+  },
+  {
+    "_data": {
+      "title": "Block 3",
+      "rich_text_editor": "",
+      "markdown": "",
+      "tags": [],
+      "locale": "es-es",
+      "reference": {
+        "values": ["c_five"],
+        "_content_type_id": "c"
+      },
+      "uid": "b_three",
+      "_version": 1
+    },
+    "_content_type_uid": "b",
+    "_uid": "b_three"
+  }
+]
