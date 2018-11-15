@@ -4,9 +4,10 @@
     "url": "https://www.contentstack.com"
   },
   "dependencies": {
-    "request": "2.88.0",
     "async": "2.1.2",
+    "chalk": "^2.4.1",
     "consolidate": "0.14.5",
+    "express": "4.14.0",
     "graceful-fs": "4.1.10",
     "helmet": "3.8.1",
     "htmlclean": "3.0.8",
@@ -18,12 +19,13 @@
     "on-headers": "1.0.1",
     "pagedown": "1.1.0",
     "path-to-regexp": "1.7.0",
+    "request": "2.88.0",
+    "serve-favicon": "^2.5.0",
     "sift": "3.2.6",
+    "socket.io-client": "1.4.5",
     "when": "3.7.7",
     "winston": "2.3.0",
-    "write-file-atomic": "^2.3.0",
-    "socket.io-client": "1.4.5",
-    "express": "4.14.0"
+    "write-file-atomic": "^2.3.0"
   },
   "description": "Contentstack web application framework based on Express.",
   "engineStrict": true,
