@@ -414,6 +414,8 @@ describe('# Query builder - query', function() {
       .where('reference_to_b.title', 'Block 1')
       .find()
       .then(function success(response) {
+        console.log('@where');
+        console.log(JSON.stringify(response))
         expect(response).to.be.an('array');
         expect(response).to.have.lengthOf(1);
         expect(response[0]).to.have.lengthOf(4);

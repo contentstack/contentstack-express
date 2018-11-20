@@ -9,8 +9,8 @@
 /*!
  * Module dependencies
  */
-var framework = require('./lib/framework/index'),
-	utils = require('./lib/utils/index');
+var framework = require('./lib/framework');
+var utils = require('./lib/utils');
 
 /**
  * @method config
@@ -23,8 +23,8 @@ framework.config = utils.config;
  * @description SDK for CRUD operations, i.e. find(), findOne(), insert(), upsert() and remove().
  */
 framework.Stack = function() {
-	return utils.db;
-}
+  return utils.db;
+};
 
 /**
  * @method  providers
