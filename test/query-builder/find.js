@@ -1,12 +1,7 @@
-const Promise = require('bluebird');
 const expect = require('chai').expect;
 const ncp = require('ncp').ncp;
 const path = require('path');
 const rimraf = require('rimraf');
-
-const fs = Promise.promisifyAll(require('fs'), {
-  suffix: 'P'
-});
 
 const utils = require('./utils');
 let connector = null;
