@@ -111,4 +111,94 @@ describe('# Query builder - find & sorting', function() {
       console.error(error);
     });
   });
+  it('Sort-7. Sort by date-time (ascending)', function() {
+    QueryBuilder.ContentType('mock_sorting_data').Query().language('es-es').ascending('date_by_time').toJSON().find().then(function success(response) {
+      console.log('@date_time result')
+      console.log(JSON.stringify(response))
+      expect(response).to.be.an('array');
+      expect(response).to.have.lengthOf(1);
+      expect(response[0]).to.have.lengthOf(7);
+      response[0].forEach(function(entry) {
+        expect(entry).to.have.property('name');
+        expect(entry.name).to.be.an('string');
+      });
+    }).catch(function error(error) {
+      console.error(error);
+    });
+  });
+  it('Sort-8. Sort by date-month (ascending)', function() {
+    QueryBuilder.ContentType('mock_sorting_data').Query().language('es-es').ascending('date_by_month').toJSON().find().then(function success(response) {
+      console.log('@date-month result')
+      console.log(JSON.stringify(response))
+      expect(response).to.be.an('array');
+      expect(response).to.have.lengthOf(1);
+      expect(response[0]).to.have.lengthOf(7);
+      response[0].forEach(function(entry) {
+        expect(entry).to.have.property('name');
+        expect(entry.name).to.be.an('string');
+      });
+    }).catch(function error(error) {
+      console.error(error);
+    });
+  });
+  it('Sort-9. Sort by date-year (ascending)', function() {
+    QueryBuilder.ContentType('mock_sorting_data').Query().language('es-es').ascending('date_by_year').toJSON().find().then(function success(response) {
+      console.log('@date_year result')
+      console.log(JSON.stringify(response))
+      expect(response).to.be.an('array');
+      expect(response).to.have.lengthOf(1);
+      expect(response[0]).to.have.lengthOf(7);
+      response[0].forEach(function(entry) {
+        expect(entry).to.have.property('name');
+        expect(entry.name).to.be.an('string');
+      });
+    }).catch(function error(error) {
+      console.error(error);
+    });
+  });
+  it('Sort-10. Sort by date-month (descending)', function() {
+    QueryBuilder.ContentType('mock_sorting_data').Query().language('es-es').descending('date_by_month').toJSON().find().then(function success(response) {
+      console.log('@date-month result')
+      console.log(JSON.stringify(response))
+      expect(response).to.be.an('array');
+      expect(response).to.have.lengthOf(1);
+      expect(response[0]).to.have.lengthOf(7);
+      response[0].forEach(function(entry) {
+        expect(entry).to.have.property('name');
+        expect(entry.name).to.be.an('string');
+      });
+    }).catch(function error(error) {
+      console.error(error);
+    });
+  });
+  it('Sort-11. Sort by date-time (descending)', function() {
+    QueryBuilder.ContentType('mock_sorting_data').Query().language('es-es').descending('date_by_time').toJSON().find().then(function success(response) {
+      console.log('@date_time result')
+      console.log(JSON.stringify(response))
+      expect(response).to.be.an('array');
+      expect(response).to.have.lengthOf(1);
+      expect(response[0]).to.have.lengthOf(7);
+      response[0].forEach(function(entry) {
+        expect(entry).to.have.property('name');
+        expect(entry.name).to.be.an('string');
+      });
+    }).catch(function error(error) {
+      console.error(error);
+    });
+  });
+  it('Sort-12. Sort by date-year (descending)', function() {
+    QueryBuilder.ContentType('mock_sorting_data').Query().language('es-es').descending('date_by_year').toJSON().find().then(function success(response) {
+      console.log('@date-year result')
+      console.log(JSON.stringify(response))
+      expect(response).to.be.an('array');
+      expect(response).to.have.lengthOf(1);
+      expect(response[0]).to.have.lengthOf(7);
+      response[0].forEach(function(entry) {
+        expect(entry).to.have.property('name');
+        expect(entry.name).to.be.an('string');
+      });
+    }).catch(function error(error) {
+      console.error(error);
+    });
+  });
 });
