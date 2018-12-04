@@ -10,7 +10,7 @@
     "graceful-fs": "4.1.10",
     "helmet": "3.8.1",
     "htmlclean": "3.0.8",
-    "lodash": "4.17.11",
+    "lodash": "^3.10.1",
     "methods": "1.1.2",
     "mkdirp": "0.5.1",
     "nedb": "1.8.0",
