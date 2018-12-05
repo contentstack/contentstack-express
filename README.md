@@ -4,7 +4,7 @@
 
 ## Install CLI
 
-**Note: This version of Contentstack CLI & Contentstack Express can be used only for V3 stacks. Use CLI version 1.x, for V2 stacks.**
+**Note**: This version of Contentstack CLI & Contentstack Express can be used only for V3 stacks. Use CLI version 1.x, for V2 stacks.
 
 Run the following command in a Terminal or Command Prompt to globally install the latest version of Contentstack CLI on your system:
 ```bash
