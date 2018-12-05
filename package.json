@@ -10,7 +10,7 @@
     "graceful-fs": "4.1.10",
     "helmet": "3.8.1",
     "htmlclean": "3.0.8",
-    "lodash": "^3.10.1",
+    "lodash": "4.17.11",
     "methods": "1.1.2",
     "mkdirp": "0.5.1",
     "nedb": "1.8.0",
@@ -29,7 +29,7 @@
   "description": "Contentstack web application framework based on Express.",
   "engineStrict": true,
   "engines": {
-    "node": ">=6.14.4"
+    "node": ">=6"
   },
   "homepage": "https://contentstack.com",
   "license": "MIT",
@@ -50,7 +50,7 @@
   ],
   "name": "contentstack-express",
   "readme": "./README.md",
-  "version": "3.2.0",
+  "version": "3.2.1",
   "devDependencies": {
     "chai": "4.2.0",
     "debug": "4.1.0",
