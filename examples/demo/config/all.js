@@ -1,4 +1,4 @@
-module.exports = exports = {
+module.exports = {
     port: 5000,
     theme: "basic",
     languages: [
