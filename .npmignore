@@ -1,5 +1,13 @@
 # Node dependencies
-node_modules/*
+node_modules
 
 # Hidden folders
 .github
+
+# Test libs
+test
+
+# Others
+.jsbeautifyrc
+.eslintrc.js
+package-lock.json
