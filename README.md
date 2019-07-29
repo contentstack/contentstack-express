@@ -6,7 +6,9 @@
 
 ## Install CLI
 
-**Note**: This version of Contentstack CLI & Contentstack Express can be used only for v3 stacks. Use CLI version 1.x, for v2 stacks.
+**Note**
+- **This library has been deprecated.** Contentstack will soon stop supporting this framework. Instead, we recommend using [DataSync](https://www.contentstack.com/docs/guide/synchronization/contentstack-datasync), which is faster and more flexible than the web framework.
+- This version of Contentstack CLI & Contentstack Express can be used only for V3 stacks. Use CLI version 1.x, for V2 stacks.
 
 Run the following command in a Terminal or Command Prompt to globally install the latest version of Contentstack CLI on your system:
 
