@@ -4,7 +4,7 @@
     "url": "https://www.contentstack.com"
   },
   "dependencies": {
-    "async": "2.6.3",
+    "async": "2.6.4",
     "consolidate": "0.15.1",
     "express": "4.16.4",
     "graceful-fs": "4.1.15",
