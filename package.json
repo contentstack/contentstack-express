@@ -6,7 +6,7 @@
   "dependencies": {
     "async": "2.6.3",
     "consolidate": "0.15.1",
-    "express": "4.16.4",
+    "express": "4.21.2",
     "graceful-fs": "4.1.15",
     "helmet": "3.15.0",
     "htmlclean": "3.0.8",
@@ -21,7 +21,7 @@
     "request": "2.88.0",
     "serve-favicon": "2.5.0",
     "sift": "7.0.1",
-    "socket.io-client": "1.4.5",
+    "socket.io-client": "4.3.0",
     "when": "3.7.8",
     "winston": "3.1.0",
     "write-file-atomic": "2.3.0"
