@@ -20,7 +20,7 @@
     "path-to-regexp": "2.4.0",
     "request": "2.88.0",
     "serve-favicon": "2.5.0",
-    "sift": "7.0.1",
+    "sift": "16.0.0",
     "socket.io-client": "1.4.5",
     "when": "3.7.8",
     "winston": "3.1.0",
