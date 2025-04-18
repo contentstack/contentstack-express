@@ -17,7 +17,7 @@
     "nunjucks": "3.1.4",
     "on-headers": "1.0.1",
     "pagedown": "1.1.0",
-    "path-to-regexp": "2.4.0",
+    "path-to-regexp": "8.0.0",
     "request": "2.88.0",
     "serve-favicon": "2.5.0",
     "sift": "7.0.1",
